@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Text  Editor</title>
+</head>
+<body>
+    <h2>Text Editor</h2>
+    <div class="container">
+        <br>
+        <div class="title__section"> 
+            <p>Write your text down here......</p>
+        </div>
+        <div class="text__section">
+            <iframe name="editor" id="editor"></iframe>
+            <div class="text__controls">
+                <button onClick="transform('bold', null)">
+                    <i class="fas fa-bold"></i>
+                </button>
+                <button onClick="transform('italic', null)">
+                    <i class="fas fa-italic"></i>
+                </button>
+                <button onClick="transform('strikeThrough', null)">
+                    <i class="fas fa-strikethrough"></i>
+                </button>
+                <button onClick="transform('underline', null)">
+                    <i class="fas fa-underline"></i>
+                  </button>
+                  <button onClick="transform('justifyLeft', null)">
+                    <i class="fas fa-align-left"></i>
+                  </button>
+                  <button onClick="transform('justifyCenter', null)">
+                    <i class="fas fa-align-center"></i>
+                  </button>
+                  <button onClick="transform('justifyRight', null)">
+                    <i class="fas fa-align-right"></i>
+                  </button>
+                  <div class="seperator"></div>
+                  <button onClick="transform('insertOrderedList', null)">
+                    <i class="fas fa-list-ol"></i>
+                  </button>
+                  <button onClick="transform('insertUnorderedList', null)">
+                    <i class="fas fa-list-ul"></i>
+                  </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
